@@ -1,6 +1,6 @@
 name: "KinD (Kubernetes in Docker) Action"
 description: "Easily run a Kubernetes cluster in your GitHub Action"
-author: "Engineerd"
+author: "skevetter"
 inputs:
   version:
     description: "Version of Kind to use (default v0.11.1)"
