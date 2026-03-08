@@ -5,12 +5,12 @@ jobs:
   check_pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: npm
-          node-version: 20
+          node-version: 24
 
       - run: npm install
 
@@ -20,6 +20,6 @@ jobs:
 
       - run: npm run test:coverage
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
 
       - run: npm audit
