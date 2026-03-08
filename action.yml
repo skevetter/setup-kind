@@ -1,6 +1,6 @@
 name: "KinD (Kubernetes in Docker) Action"
 description: "Easily run a Kubernetes cluster in your GitHub Action"
-author: "Engineerd"
+author: "skevetter"
 inputs:
   version:
     description: "Version of Kind to use (default v0.11.1)"
@@ -35,7 +35,7 @@ inputs:
     description: "Silence all stderr output"
     default: "false"
 runs:
-  using: "node20"
+  using: "node24"
   main: "dist/main/index.js"
   post: "dist/post/index.js"
   post-if: success()
